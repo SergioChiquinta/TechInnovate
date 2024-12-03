@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item .active {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img.icono {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+.navbar-brand h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 20px; /* Ajuste del margen derecho para mover el botón hacia la izquierda */
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn-group {
+    margin-top: auto;
+}
+
+/* Carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(172, 169, 169);
+    border-radius: 50%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.team-section {
+    margin-top: 50px;
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+/* Formulario de filtro: separar el combobox y el botón */
+.input-group {
+    width: 100%;  /* Asegura que el formulario use todo el ancho disponible */
+    margin-bottom: 1rem;  /* Espacio adicional debajo del formulario */
+}
+
+.input-group select {
+    flex: 1;  /* El combobox ocupa el espacio disponible */
+    margin-right: 10px;  /* Espacio entre el combobox y el botón */
+}
+
+.input-group button {
+    flex-shrink: 0;  /* Evita que el botón se reduzca de tamaño */
+    padding: 0.5rem 1rem;  /* Asegura que el botón tenga un buen tamaño */
+    min-width: 120px;  /* Define un ancho mínimo para el botón */
+}
+
+/* Ajustes para pantallas grandes */
+.input-group button {
+    min-width: 120px;  /* Asegura que el botón tenga un ancho suficiente */
+    font-size: 1rem;  /* Ajusta el tamaño del texto si es necesario */
+}
+
+/* Mejor distribución de los elementos */
+.input-group {
+    display: flex;  /* Usar flexbox para una distribución más eficiente */
+    justify-content: space-between;  /* Separar el combobox y el botón */
+    align-items: center;  /* Alineación vertical de los elementos */
+}
+
+.input-group select {
+    margin-right: 10px;  /* Asegura que haya un pequeño espacio entre el combobox y el botón */
+    border-radius: 0px;
+}
+
+.input-group button {
+    padding: 0.5rem 1rem;  /* Agrega más espacio dentro del botón */
+    border-radius: 0px;
+}
+
+/* Responsividad para pantallas medianas */
+@media (max-width: 768px) {
+    .navbar-brand img.icono {
+        width: 50px;
+        margin-left: 20px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        margin-right: 10px; /* Ajuste adicional para mover el botón a la izquierda en pantallas medianas */
+    }
+    
+    button {
+        margin-right: 20px; /* Ajuste adicional para mover el botón a la izquierda en pantallas medianas */
+    }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 576px) {
+    h1, h5, p, small {
+        font-size: smaller;
+    }
+
+    .btn {
+        font-size: smaller;
+    }
+
+    /* Ajuste de cards para vista en columna */
+    .card {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    /* Ajuste de márgenes en navbar para pantallas pequeñas */
+    .navbar-brand img.icono {
+        width: 40px;
+        margin-left: 10px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav {
+        margin-right: 5px; /* Más a la izquierda en pantallas pequeñas */
+        margin-left: 0;
+    }
+    
+    .input-group {
+        flex-direction: column;  /* Los elementos se apilan verticalmente */
+        align-items: stretch;  /* Asegura que los elementos ocupen todo el ancho */
+    }
+
+    .input-group select,
+    .input-group button {
+        width: 100%;  /* Asegura que el combobox y el botón ocupen todo el ancho disponible */
+        margin-bottom: 0.5rem;  /* Espacio entre el combobox y el botón */
+    }
+    
+}

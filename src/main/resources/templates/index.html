@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>TechInnovate</title>
+    <link rel="icon" href="../img/logos.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">
+            <img class="icono" src="../img/logos.png" alt="Logo"/>
+            <h1>TechInnovate</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://content.emarket.pe/common/collections/products/60/02/6002b95a-b94a-4784-8b29-6f55cdb460ad.jpg" class="d-block mx-auto w-50" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://content.emarket.pe/common/collections/products/5f/1f/5f1f2257-d6aa-4f65-a86f-b3cdd72c34ca.jpg" class="d-block mx-auto w-50" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://content.emarket.pe/common/collections/products/cb/d7/cbd798a8-d7e7-4227-8329-6688b614ac15.jpg" class="d-block mx-auto w-50" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Bienvenido a TechInnovate</h1>
+        <p class="text-center">Su tienda en línea única para lo último en tecnología.</p>
+        <p class="text-center">Encuentra los mejores accesorios del mercado.</p>
+        <p class="text-center">Desde teclados y monitores hasta componentes y accesorios de lo más nuevo, en <strong>TechInnovate</strong> tenemos lo que necesitas.</p>
+        <p class="text-center">Disfruta de nuestro <strong>envío rápido</strong> en menos de 24 horas.</p>
+        <br>
+    </div>
+
+    <section class="py-5 bg-light">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2 class="text-center mb-4 display-8">Ventajas de comprar con nosotros</h2>
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 justify-content-center">
+                <div class="col mb-4">
+                    <div class="card text-center border-light shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-check-lg fs-2 text-primary"></i>
+                            </div>
+                            <h5 class="mb-2">Garantía por 1 Año</h5>
+                            <p class="text-muted">Todos nuestros productos cuentan con un año de garantía para tu tranquilidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card text-center border-light shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-tags fs-2 text-success"></i>
+                            </div>
+                            <h5 class="mb-2">Los mejores precios del mercado</h5>
+                            <p class="text-muted">Nos aseguramos de ofrecerte los precios más competitivos en todos nuestros productos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card text-center border-light shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-truck fs-2 text-danger"></i>
+                            </div>
+                            <h5 class="mb-2">Envío en 24 Horas</h5>
+                            <p class="text-muted">Recibe tus productos en tiempo récord con nuestro servicio de envío rápido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-muted py-5 bg-dark mt-5">
+        <div class="container">
+            <p class="mb-1 text-center text-white">&copy; 2024 TechInnovate. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
