@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 /*import java.util.ArrayList;*/
 import java.util.List;
 import com.techinnovate.techinnovate.repository.ProductoRepository;
-import jakarta.transaction.Transactional;
 
 @Service
     public class ProductoService {
